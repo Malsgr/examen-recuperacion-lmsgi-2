@@ -63,7 +63,7 @@ Se debe usar la etiqueta '<a>' en vez de '<link>'
 
 2. ¿Que es una promesa? Crea un ejemplo con javascript donde demuestres como se maneja una.
 
-
+Una promesa es un objeto de 
 
 3. ¿Que hace la funcion fetch? Explica mediante código y comentarios que hace cada una de sus partes.
 
