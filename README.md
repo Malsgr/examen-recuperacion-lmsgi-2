@@ -66,7 +66,7 @@ Se debe usar la etiqueta '<a>' en vez de '<link>'
 Una promesa en JavaScript es un objeto que representa la terminación una operación asíncrona. 
 
 ```javascript
-const promesa = new Promise((resolve, reject) => {
+const promesa = new promise((resolve, reject) => {
     const exito = true;
     if (exito) {
         resolve("Operación exitosa");
@@ -110,6 +110,5 @@ fetch('/url')         //Peticion http
 - **hidden**: Campo oculto. Atributos: `value` y `disabled`
 - **url**: Enlace. Atributos: `value`, `placeholder` y `required`
 
-- No sé si me falta algnuo. Creo que no.
 
 
