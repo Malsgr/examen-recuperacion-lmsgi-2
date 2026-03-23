@@ -86,17 +86,17 @@ promesa
 
 4. ¿Que tipos de inputs conoces? Citalos y describe que atributos pueden acompañar cada uno.
 
-- text: Campo de texto. Atributos: `value`, `placeholder`, `maxlength`, `minlength`, `required` y `disabled`
-- password: Campo de contraseña. Atributos: `value`, `placeholder`, `maxlength`, `minlength` y `required`
-- email: Correo electrónico. Atributos: `value`, `placeholder` y `required`
-- number: Campo numérico. Atributos: `value`, `min`, `max` y `required`
-- checkbox: Casilla. Atributos: `checked`, `value`, `required` y `disabled`
-- date: Fecha. Atributos: `value`, `min`, `max`, `required`
-- range: Deslizador. Atributos: `value`, `min`, `max` y `step`
-- submit: Botón de envío de formulario. Atributos: `value` y `disabled`
-- button: Botón genérico. Atributos: `value` y `disabled`
-- hidden: Campo oculto. Atributos: `value` y `disabled`
-- url: Enlace. Atributos: `value`, `placeholder` y `required`
+- **text**: Campo de texto. Atributos: `value`, `placeholder`, `maxlength`, `minlength`, `required` y `disabled`
+- **password**: Campo de contraseña. Atributos: `value`, `placeholder`, `maxlength`, `minlength` y `required`
+- **email**: Correo electrónico. Atributos: `value`, `placeholder` y `required`
+- **number**: Campo numérico. Atributos: `value`, `min`, `max` y `required`
+- **checkbox**: Casilla. Atributos: `checked`, `value`, `required` y `disabled`
+- **date**: Fecha. Atributos: `value`, `min`, `max`, `required`
+- **range**: Deslizador. Atributos: `value`, `min`, `max` y `step`
+- **submit**: Botón de envío de formulario. Atributos: `value` y `disabled`
+- **button**: Botón genérico. Atributos: `value` y `disabled`
+- **hidden**: Campo oculto. Atributos: `value` y `disabled`
+- **url**: Enlace. Atributos: `value`, `placeholder` y `required`
 
 - No sé si me falta algnuo. Creo que no.
 
