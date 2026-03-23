@@ -66,7 +66,7 @@ Se debe usar la etiqueta '<a>' en vez de '<link>'
 Una promesa en JavaScript es un objeto que representa la terminación una operación asíncrona. 
 
 ```javascript
-const Promesa = new Promise((resolve, reject) => {
+const promesa = new Promise((resolve, reject) => {
     const exito = true;
     if (exito) {
         resolve("Operación exitosa");
@@ -75,7 +75,7 @@ const Promesa = new Promise((resolve, reject) => {
     }
 });
 
-Promesa
+promesa
     .then(resultado => console.log(resultado))
     .catch(error => console.error(error));
 ```
@@ -88,7 +88,11 @@ Promesa
 
 - text: Campo de texto. Atributos: `value`, `placeholder`, `maxlength`, `minlength`, `required` y `disabled`
 - password: Campo de contraseña. Atributos: `value`, `placeholder`, `maxlength`, `minlength` y `required`
-- email: Correo electrónico. Atributos: `value`, `placeholder` y `required`, `multiple`
+- email: Correo electrónico. Atributos: `value`, `placeholder` y `required`
 - number: Campo numérico. Atributos: `value`, `min`, `max` y `required`
-- 
+- checkbox: Casilla. Atributos: `checked`, `value`, `required` y `disabled`
+- date: Fecha. Atributos: `value`, `min`, `max`, `required`
+
+
+
 
