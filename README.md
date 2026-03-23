@@ -82,7 +82,19 @@ promesa
 
 3. ¿Que hace la funcion fetch? Explica mediante código y comentarios que hace cada una de sus partes.
 
-La función fetch permite realizar peticiones. Devuelve una promesa que se resuelve cuando se recibe una respuesta.
+La función fetch permite realizar peticiones de http. Devuelve una promesa que se resuelve cuando se recibe una respuesta.
+```javascript
+fetch('/url')         
+    .then(response => {
+        return response.json(); 
+    })
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+```
 
 4. ¿Que tipos de inputs conoces? Citalos y describe que atributos pueden acompañar cada uno.
 
