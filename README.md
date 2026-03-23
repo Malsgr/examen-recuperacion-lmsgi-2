@@ -84,15 +84,15 @@ promesa
 
 La función fetch permite realizar peticiones de http. Devuelve una promesa que se resuelve cuando se recibe una respuesta.
 ```javascript
-fetch('/url')         
+fetch('/url')         //Peticion http
     .then(response => {
-        return response.json(); 
+        return response.json(); //Maneja la respuesta http
     })
     .then(data => {
-        console.log(data);
+        console.log(data); //Devuelve los datos por consola
     })
     .catch(error => {
-        console.error('Error:', error);
+        console.error('Error:', error);//En caso de errores
     });
 ```
 
