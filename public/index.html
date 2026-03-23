@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,49 +8,53 @@
 </head>
 
 <body>
+    <h1>Mensajes</h1>
 
-    <div class="container">
-        <table action="/mensajes" method="GET">
-            <thead>
-                <tr>
-                    <th>id</th>
-                    <th>usuario</th>
-                    <th>mensaje</th>
-                    <th>fecha</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td type="text" id="mensajes.id"></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-        
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Usuario</th>
+                <th>Contenido</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-mensajes">
+        </tbody>
+    </table>
+
+    <script>
+        fetch('/mensajes')
+            .then(response => response.json())
+            .then(data => {
+                const tbody = document.getElementById('tabla-mensajes');
+                data.forEach(mensaje => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${mensaje.id}</td>
+                        <td>${mensaje.user}</td>
+                        <td>${mensaje.content}</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            });
+    </script>
+
     <form action="/mensajes" method="POST">
         <fieldset>
-            <legend>POST</legend>
+            <legend>Nuevo Mensaje</legend>
             
             <label for="pass">Contraseña:</label>
-            <input type="text" id="pass" name="pass" ${7|required,|}>
+            <input type="text" id="pass" name="pass" required>
             
             <label for="usuario">Usuario:</label>
-            <textarea id="usuario" name="usuario" rows="1"></textarea>
+            <input type="text" id="usuario" name="usuario" required>
             
             <label for="contenido">Contenido:</label>
-            <textarea id="contenido" name="contenido" rows="4"></textarea>
+            <textarea id="contenido" name="contenido" rows="4" required></textarea>
             
             <button type="submit">Enviar</button>
         </fieldset>
     </form>
-
-    <div>
-        <script scr="index.ts"></script>
-    </div>
 </body>
 
 </html>
