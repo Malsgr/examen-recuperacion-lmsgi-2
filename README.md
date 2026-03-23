@@ -86,4 +86,9 @@ Promesa
 
 4. ¿Que tipos de inputs conoces? Citalos y describe que atributos pueden acompañar cada uno.
 
+- text: Campo de texto. Atributos: `value`, `placeholder`, `maxlength`, `minlength`, `required` y `disabled`
+- password: Campo de contraseña. Atributos: `value`, `placeholder`, `maxlength`, `minlength` y `required`
+- email: Correo electrónico. Atributos: `value`, `placeholder` y `required`, `multiple`
+- number: Campo numérico. Atributos: `value`, `min`, `max` y `required`
+- 
 
