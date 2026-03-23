@@ -63,7 +63,22 @@ Se debe usar la etiqueta '<a>' en vez de '<link>'
 
 2. ¿Que es una promesa? Crea un ejemplo con javascript donde demuestres como se maneja una.
 
-Una promesa es un objeto de 
+Una promesa en JavaScript es un objeto que representa la terminación una operación asíncrona. 
+
+```javascript
+const Promesa = new Promise((resolve, reject) => {
+    const exito = true;
+    if (exito) {
+        resolve("Operación exitosa");
+    } else {
+        reject("Error en la operación");
+    }
+});
+
+Promesa
+    .then(resultado => console.log(resultado))
+    .catch(error => console.error(error));
+```
 
 3. ¿Que hace la funcion fetch? Explica mediante código y comentarios que hace cada una de sus partes.
 
