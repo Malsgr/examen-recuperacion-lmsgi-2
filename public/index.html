@@ -8,9 +8,28 @@
 </head>
 
 <body>
-    <table action="mensajes" method="GET">
-        <p id="mensajes"></p>
-    </table>
+
+    <div class="container">
+        <table action="/mensajes" method="GET">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>usuario</th>
+                    <th>mensaje</th>
+                    <th>fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td type="text" id="mensajes.id"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
         
     <form action="/mensajes" method="POST">
         <fieldset>
@@ -20,7 +39,7 @@
             <input type="text" id="pass" name="pass" ${7|required,|}>
             
             <label for="usuario">Usuario:</label>
-            <textarea id="usuario" name="usuario" rows="4"></textarea>
+            <textarea id="usuario" name="usuario" rows="1"></textarea>
             
             <label for="contenido">Contenido:</label>
             <textarea id="contenido" name="contenido" rows="4"></textarea>
